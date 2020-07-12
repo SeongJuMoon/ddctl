@@ -1,0 +1,49 @@
+resource:
+  name: datadog_monitor
+  required:
+    - name: type
+      format:
+    - name: name
+      format:
+    - name: query
+      format:
+    - name: message            
+      format:
+  optional:
+    - name: thresholds
+      format:
+        ok:
+        warning:
+        warning_recovery:
+        critical:
+        critical_recovery:
+    - name: notify_no_data
+      format:
+    - name: escalation_message
+      format:
+    - name: new_host_delay
+      format:
+    - name: evaluation_delay
+      format:
+    - name: no_data_timeframe
+      format:
+    - name: renotify_interval
+      format:
+    - name: notify_audit
+      format:
+    - name: timeout_h
+      format:
+    - name: include_tags
+      format:
+    - name: enable_logs_sample
+      format:
+    - name: require_full_window
+      format:
+    - name: locked
+      format:
+    - name: tags
+      format:
+    - name: threshold_windows
+      format:
+        recovery_window:
+        trigger_window:
